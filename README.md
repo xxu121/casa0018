@@ -105,3 +105,39 @@ In Edge Impulse, the main processing modules used to train the audio data includ
 | 6             | Spectrogram      | Classification   | 6435               | 0.005         | 100                      | No                | Reshape layer (13 columns), 1D conv, Flatten layer | 0.98        | 8, 16   | 0.25         | 59.5                   | 3.70                        | 0.88 |
 
 
+Table 2: Result under different learning block
+
+## Experiments
+
+
+During the course of the experiments, various parameters were tuned to see how they affected the model. These adaptations included learning rate, number of training cycles, remodelling layer structure, number of neurons and dropout rate. The aim was to compare the training accuracy, testing accuracy and loss under each set of parameters to find the best combination.
+Experiments 7 to 11 indicate that increasing the number of training cycles does not have a significant impact on the results of the project.
+Experiments 10 and 11 indicate that a 13-column remodelling layer works better than a 65-column remodelling layer.
+Experiments 10 to 16 explored various neuron configurations and showed that a setup with 256 neurons in each of the two layers performed best.
+Experiments that removed the flat layer failed to produce satisfactory results.
+Experiment 17 improved the learning rate from 0.005 to 0.05, but the accuracy was significantly lower.
+Experiment 18 demonstrate the result under 2D conv.
+
+
+## Results and Observations
+
+Experiment 15 is the best choice. It had the highest model test accuracy of 91.98%, which is essential to ensure good model performance. The training accuracy was also 96.9% with a low loss rate of 0.32, showing good predictive performance. The bilayer structure with 256 neurons seems to provide the right amount of complexity to capture audio without overfitting, making Experiment 15 the best model for the audio language classification task.
+
+| Experiment no | Processing block | Learning Block         | Processed features | Learning rate | Number of training cycles | Data augmentation | Neural network architecture                                    | Coefficient | Neurons     | Dropout rate | Training ACCURACY (%) | Model Testing accuracy (%) | Loss |
+|---------------|------------------|------------------------|--------------------|---------------|--------------------------|-------------------|-----------------------------------------------------------------|-------------|-------------|--------------|------------------------|-----------------------------|------|
+| 7             | MFCC             | Classification & k-means | 650                | 0.005         | 100                      | No                | Reshape layer (65 columns), 1D conv, Flatten layer              | 0.98        | 8, 16       | 0.25         | 95.4                   | 90.74                       | 0.16 |
+| 8             | MFCC             | Classification         | 650                | 0.005         | 200                      | No                | Reshape layer (65 columns), 1D conv, Flatten layer              | 0.98        | 8, 16       | 0.25         | 88.5                   | 90.74                       | 0.45 |
+| 9             | MFCC             | Classification         | 650                | 0.005         | 500                      | No                | Reshape layer (65 columns), 1D conv, Flatten layer              | 0.98        | 8, 16       | 0.25         | 88.5                   | 90.74                       | 0.45 |
+| 10            | MFCC             | Classification         | 650                | 0.005         | 100                      | No                | Reshape layer (13 columns), 1D conv, Flatten layer              | 0.98        | 8, 16       | 0.25         | 95.4                   | 90.74                       | 0.12 |
+| 11            | MFCC             | Classification         | 650                | 0.005         | 200                      | No                | Reshape layer (13 columns), 1D conv, Flatten layer              | 0.98        | 8, 16       | 0.25         | 95.4                   | 90.74                       | 0.12 |
+| 12            | MFCC             | Classification         | 650                | 0.005         | 100                      | No                | Reshape layer (13 columns), 1D conv, Flatten layer              | 0.98        | 8, 256      | 0.25         | 96.9                   | 90.74                       | 0.58 |
+| 13            | MFCC             | Classification         | 650                | 0.005         | 100                      | No                | Reshape layer (13 columns), 1D conv, Flatten layer              | 0.98        | 8, 256      | 0.05         | 92.4                   | 90.74                       | 0.47 |
+| 14            | MFCC             | Classification         | 650                | 0.005         | 100                      | No                | Reshape layer (13 columns), 1D conv, Flatten layer              | 0.98        | 8           | 0.05         | 85.5                   | 75.31                       | 0.83 |
+| 15            | MFCC             | Classification         | 650                | 0.005         | 100                      | No                | Reshape layer (13 columns), 1D conv, Flatten layer              | 0.98        | 256, 256    | 0.25         | 96.9                   | 91.98                       | 0.32 |
+| 16            | MFCC             | Classification         | 650                | 0.005         | 100                      | No                | Reshape layer (13 columns), 1D conv                            | 0.98        | 256, 256    | 0.25         | Failed                 | Failed                      | Failed |
+| 17            | MFCC             | Classification         | 650                | 0.05          | 100                      | No                | Reshape layer (13 columns), 1D conv, Flatten layer              | 0.98        | 256, 256    | 0.25         | 45.8                   | 0                           | 0.47 |
+| 18            | MFCC             | Classification         | 650                | 0.005         | 100                      | No                | Reshape layer (13 columns), 2D conv, Flatten layer              | 0.98        | 256, 256    | 0.25         | 94.7                   | 87.04                       | 0.19 |
+
+Table 3: Result under different parameters
+
+
