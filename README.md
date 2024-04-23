@@ -63,11 +63,13 @@ The dataset consists of a 15-second audio clip labelled English with the phrase 
 The 15-second audio was divided into several shorter clips, each containing a complete utterance of 'deep learning'. Samples that are unclear due to background noise or incomplete phrases were identified and removed from the dataset. 
 
 
-![image](https://github.com/xxu121/casa0018/assets/146341729/40850fcb-e683-47bd-8e65-3c883861bcdd)
+![image](https://github.com/xxu121/casa0018/assets/146341729/72a73b7a-afbd-42f9-8ca4-20855f6d7dc9)
+
 
 Figure 2: example of speaking deep learning
 
 
-![image](https://github.com/xxu121/casa0018/assets/146341729/d7f87181-14f6-493a-9b75-2fd8b9430610)
+![image](https://github.com/xxu121/casa0018/assets/146341729/adac1818-e8d2-44a2-9dce-2d6a009b8a36)
+
 
 Figure 3: 1s sample of English
