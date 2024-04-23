@@ -155,9 +155,42 @@ The model is about 88% sure when it identifies English speech and similarly conf
 ![image](https://github.com/xxu121/casa0018/assets/146341729/ce1d7021-6707-4ef9-8907-b13c411635d3)
 
 
-Figure 6: Accuracy of model testing result
+Figure 6: Accuracy of the best model testing result
+
+
 ## Observations
 
+In this case, training the model more than 100 times didn't make it any better at recognising sounds. It seems that after 100 training sessions, the model has learnt everything it can.
 
 
+The 13-column reshaping layer may provide a more optimised configuration than the 15-column reshaping layer, allowing the model to understand and differentiate between audio signals effectively. So 13-column reshaping layer provide more accuracy result.
+
+ 
+The 256,256 neuron configuration performs best in terms of model complexity and learning capacity, and therefore excels in audio classification.
+
+
+Improvements to the model included removing uncertain audio samples to clean up the dataset, and adjusting the model's settings during testing to identify configurations that would improve accuracy.
+
+
+When deploying the model to a physical device, the achieved accuracy often falls short of the theoretical values. This discrepancy becomes more evident when distinguishing between Chinese and English, leading to confusion. Furthermore, without specific training, the model struggles to recognize words beyond the ones it has been trained on, both in Chinese and English.
+
+
+## Future improvement 
+
+
+Expanding the dataset to cover more Chinese and English words helps the model to better recognise any word in both languages.
+
+
+Adjust the settings while training the model.
+
+
+Link the language recognition output to a translation app, enabling the app to identify the heard language and translate it into the user's preferred language.
+
+
+## Bibliography
+
+1. IMPULSE, E. 2024. Responding to your voice - TI LaunchXL [Online]. Available: https://docs.edgeimpulse.com/docs/run-inference/hardware-specific-tutorials/responding-to-your-voice-ti#id-3.-building-your-dataset [Accessed].
+2. 
+3. SAKTI, S. & UTIYAMA, M. 2017. International Workshop on Spoken Language Translation.
+SITUNAYAKE, P. W. A. D. 2020. TinyML.
 
