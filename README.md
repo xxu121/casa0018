@@ -95,11 +95,13 @@ Figure 4: samples with different speaking speed
 ## Model
 In Edge Impulse, the main processing modules used to train the audio data include spectrograms, MFCC, and MFE. MFE and spectrograms are great for non-speech audio analysis, while MFCC is the primary processing module because it effectively captures the nuances of human speech. MFE and spectrograms are used to show how their training results differ from those of MFCC, thus highlighting the advantages of MFCC in speech audio processing. Also, two main types of learning are used: classification, which splits the audio into languages, and transfer learning, which improves the results by using models trained on similar tasks.
 
-Experiment no	Processing block	Learning Block	Processed features	Learning rate	Number of training cycles	Data augmentation 	Neural network architecture	Coefficient 	neurons	Dropout rate	Training ACCURACY (%)	Model Testing accuracy (%)	Loss
-1	MFE	Transfer Learning	3960	0.01	100	No	MobileNetV1 0.1	0.98	128	0.1	94.2	95.06	0.36
-2	MFCC	Transfer Learning	650	0.01	100	No	MobileNetV1 0.1	0.98	128	0.1	Failed	Failed 	Failed
-3	Spectrogram	Transfer Learning	6435	0.01	100	No	MobileNetV1 0.1	0.98	128	0.1	Failed 	Failed 	Failed 
-4	MFE	Classification	3960	0.005	100	No	Reshape layer (13 columns), 1D conv, Flatten layer	0.98	8,16	0.25	Failed	Failed 	Failed
-5	MFCC	Classification	650	0.005	100	No	Reshape layer (13 columns), 1D conv, Flatten layer	0.98	8, 16	0.25	88.5	90.74	0.45
-6	Spectrogram	Classification	6435	0.005	100	No	Reshape layer (13 columns), 1D conv, Flatten layer	0.98	8, 16	0.25	59.5	3.70	0.88<img width="1376" alt="image" src="https://github.com/xxu121/casa0018/assets/146341729/f15c8afb-caff-4d02-aea1-2a345e16f0ff">
+| Experiment no | Processing block | Learning Block | Processed features | Learning rate | Number of training cycles | Data augmentation | Neural network architecture | Coefficient | Neurons | Dropout rate | Training ACCURACY (%) | Model Testing accuracy (%) | Loss |
+|---------------|------------------|----------------|--------------------|---------------|--------------------------|-------------------|-----------------------------|-------------|---------|--------------|------------------------|-----------------------------|------|
+| 1             | MFE              | Transfer Learning | 3960               | 0.01          | 100                      | No                | MobileNetV1 0.1             | 0.98        | 128     | 0.1          | 94.2                   | 95.06                       | 0.36 |
+| 2             | MFCC             | Transfer Learning | 650                | 0.01          | 100                      | No                | MobileNetV1 0.1             | 0.98        | 128     | 0.1          | Failed                 | Failed                      | Failed |
+| 3             | Spectrogram      | Transfer Learning | 6435               | 0.01          | 100                      | No                | MobileNetV1 0.1             | 0.98        | 128     | 0.1          | Failed                 | Failed                      | Failed |
+| 4             | MFE              | Classification   | 3960               | 0.005         | 100                      | No                | Reshape layer (13 columns), 1D conv, Flatten layer | 0.98        | 8, 16   | 0.25         | Failed                 | Failed                      | Failed |
+| 5             | MFCC             | Classification   | 650                | 0.005         | 100                      | No                | Reshape layer (13 columns), 1D conv, Flatten layer | 0.98        | 8, 16   | 0.25         | 88.5                   | 90.74                       | 0.45 |
+| 6             | Spectrogram      | Classification   | 6435               | 0.005         | 100                      | No                | Reshape layer (13 columns), 1D conv, Flatten layer | 0.98        | 8, 16   | 0.25         | 59.5                   | 3.70                        | 0.88 |
+
 
