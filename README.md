@@ -54,6 +54,10 @@ In Edge Impulse, the dataset consists of recordings from various individuals say
 <img width="607" alt="image" src="https://github.com/xxu121/casa0018/assets/146341729/311154ec-ac1f-46c0-986d-0bc50b9a9147">
 
 
+Table 1: amount of training and testing data
+
+
+
 ## Dataset preparing
 
 
@@ -73,3 +77,21 @@ Figure 2: example of speaking deep learning
 
 
 Figure 3: 1s sample of English
+
+
+
+The lengths of the dataset's audio clips range from 1 second to 2 seconds, reflecting the varying speeds at which different people speak. These differences in length are taken into account without making any modifications to the clips.
+
+
+
+The machine learning model has been trained to recognise and learn the distinct characteristics of Chinese and English from this large dataset, which includes diverse manners of speech. Due to the significant differences between Chinese and English, the model can accurately differentiate between these two languages.
+
+![image](https://github.com/xxu121/casa0018/assets/146341729/393b6d42-f9ab-4a73-b77e-5fe203590201)
+
+
+Figure 4: samples with different speaking speed
+
+
+## Model
+In Edge Impulse, the main processing modules used to train the audio data include spectrograms, MFCC, and MFE. MFE and spectrograms are great for non-speech audio analysis, while MFCC is the primary processing module because it effectively captures the nuances of human speech. MFE and spectrograms are used to show how their training results differ from those of MFCC, thus highlighting the advantages of MFCC in speech audio processing. Also, two main types of learning are used: classification, which splits the audio into languages, and transfer learning, which improves the results by using models trained on similar tasks.
+
