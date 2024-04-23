@@ -140,4 +140,24 @@ Experiment 15 is the best choice. It had the highest model test accuracy of 91.9
 
 Table 3: Result under different parameters
 
+The best model used a learning rate of 0.005 and a simple network design with a reshape layer, a convolutional layer, and a flatten layer. It had two sets of 256 neurons each and used a dropout rate of 0.25.
+
+
+![image](https://github.com/xxu121/casa0018/assets/146341729/7a04896b-e29f-4a37-b046-ddd50dc6772c)
+
+
+Figure 5: Accuracy and loss of the best training model
+
+
+The model is about 88% sure when it identifies English speech and similarly confident when it hears noise. The inaccuracies in distinguishing English speech from noise suggest that the model sometimes confuses the two. 
+
+
+![image](https://github.com/xxu121/casa0018/assets/146341729/ce1d7021-6707-4ef9-8907-b13c411635d3)
+
+
+Figure 6: Accuracy of model testing result
+## Observations
+
+
+
 
