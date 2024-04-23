@@ -40,7 +40,7 @@ To identify the most effective model for distinguishing between languages, the p
 The best performing model is built onto the Arduino Nano board, which monitors the sound. Built-in LEDs (red, green, and blue) on the board indicate the language being spoken. (Situnayake, 2020)
 
 
-![image](https://github.com/xxu121/casa0018/assets/146341729/0df6c4dc-a598-4b79-8620-30ec33a52399)
+![image](https://github.com/xxu121/casa0018/assets/146341729/ac9e2c0f-e0eb-4f60-b9b1-45d719010f4c)
 
 
 Figure 1: The components of language classification application
