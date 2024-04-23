@@ -3,7 +3,7 @@
 Xincen Xu, 
 
 
-link to github rep:  
+link to github rep:  [https://github.com/xxu121/casa0018/blob/main/README.md](https://github.com/xxu121/casa0018/blob/main/README.md)
 
 
 link to Edge Impulse projects: [https://studio.edgeimpulse.com/studio/362922](https://studio.edgeimpulse.com/studio/362922) 
