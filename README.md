@@ -193,3 +193,11 @@ Link the language recognition output to a translation app, enabling the app to i
 2. SAKTI, S. & UTIYAMA, M. 2017. International Workshop on Spoken Language Translation.
 SITUNAYAKE, P. W. A. D. 2020. TinyML.
 
+
+# Declaration of Authorship
+
+I, Xincen Xu, confirm that the work presented in this assessment is my own. Where information has been derived from other sources, I confirm that this has been indicated in the work.
+
+Xincen Xu
+
+23 Apr 2024
