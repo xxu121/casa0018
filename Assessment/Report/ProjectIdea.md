@@ -1,13 +1,14 @@
 # Project Idea
 
-## Title: Your snappy project title
+## Title: Audio-based Chinese-English differentiation using deep learning
+
 
 ---
 
 ## Idea: 
-Complete the sentence:
 
-**I want my project to be able to (1) .................... using the (2)............... on my (3)...........**
+
+**I want my project to be able to classify 'English' and 'Chinese' using microphone on my arduino**
 
 
 1. *e.g. detect when i say "wotcha", recognise a bird in a live camera stream etc*
@@ -17,8 +18,7 @@ Complete the sentence:
 ---
 
 ## Data:
-Also think about: 
-What data will you use and what data will you capture?
+The data is from recording different people speaking 'deep learning' and '深度学习‘(deep learning in Chinese) 
 
 
 ----
