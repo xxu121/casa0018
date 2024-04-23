@@ -50,11 +50,9 @@ Figure 1: The components of language classification application
 
 In Edge Impulse, the dataset consists of recordings from various individuals saying "deep learning" in both English and Chinese. Each recording is 30 seconds long, and every phrase within these recordings has been segmented into 1-second slices, with low-quality segments removed. Noise samples were recorded in a classroom setting, while additional natural noises were sourced from Edge Impulse’s (Impulse, 2024) resources. 
 
-	Training	Testing	Total
-Chinese	238	55	293
-English 	289	66	355
-Noise	93	24	117
-%	80	20	<img width="485" alt="image" src="https://github.com/xxu121/casa0018/assets/146341729/b7c72031-527a-4dcd-b1ee-652ffb00d67a">
+
+<img width="607" alt="image" src="https://github.com/xxu121/casa0018/assets/146341729/311154ec-ac1f-46c0-986d-0bc50b9a9147">
+
 
 ## Dataset preparing
 
