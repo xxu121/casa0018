@@ -190,7 +190,6 @@ Link the language recognition output to a translation app, enabling the app to i
 ## Bibliography
 
 1. IMPULSE, E. 2024. Responding to your voice - TI LaunchXL [Online]. Available: https://docs.edgeimpulse.com/docs/run-inference/hardware-specific-tutorials/responding-to-your-voice-ti#id-3.-building-your-dataset [Accessed].
-2. 
-3. SAKTI, S. & UTIYAMA, M. 2017. International Workshop on Spoken Language Translation.
+2. SAKTI, S. & UTIYAMA, M. 2017. International Workshop on Spoken Language Translation.
 SITUNAYAKE, P. W. A. D. 2020. TinyML.
 
