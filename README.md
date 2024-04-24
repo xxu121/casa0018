@@ -1,10 +1,4 @@
----
-header-includes:
-   - \usepackage{fontspec}
-   - \setmainfont{SimSun}
-   - \setsansfont{SimSun}    # Optional: Use this if you have sans-serif text
-   - \setmonofont{SimSun}    # Optional: Use this if you have monospaced text
----
+
 
 # Audio-based Chinese-English differentiation using deep learning
 
